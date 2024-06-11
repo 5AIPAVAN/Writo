@@ -1,25 +1,67 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import Contactus from './Contactus';
+import Courses from './Courses';
+import Courses2 from './Courses2';
+import ExpertGuidance from './ExpertGuidance';
+import Foundationalcourse from './Foundationalcourse';
+import ImagePart from './ImagePart';
+import Imagess from './Imagess';
+import NavScrollExample from './NavScrollExample';
+import Mentors from './Mentors';
+import Reviews from './Reviews';
+import Journey from './Journey';
+import Reviews2 from './Reviews2';
+import Reviews3 from './Reviews3';
+import HeroSection from './HeroSection';
+import Hero2 from './Hero2';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+   <>
+   <NavScrollExample/>
+
+   {/* <div className="font-[Poppins] h-screen overflow-h bg1">
+            <HeroSection/>
+        </div> */}
+
+
+<Hero2/>
+
+   {/* <h2 className="highlights text-center my-4" >..... What We Offer .....</h2> */}
+   {/* <Courses/>
+   <Courses2/> */}
+   {/* <Foundationalcourse/> */}
+   {/* <h2 className="coursetitle my-5 text-center" > Foundational Courses</h2> */}
+   {/* <Imagess/> */}
+   {/* <ImagePart/> */}
+   
+   {/* <h2 className="coursetitle my-5 text-center" > Categories</h2>
+   <Imagess/>
+   <ExpertGuidance/>
+   <h2 className="highlights text-center" >...... Suggestions ......</h2>
+   <h2 className="coursetitle my-5 text-center" > Foundational Courses</h2> */}
+   {/* <Imagess/> */}
+   {/* <ImagePart/> */}
+   <Mentors/>
+   {/* <Reviews text="This is a simple marquee component in React!" speed={10} /> */}
+   <div className="mentorshead gradientheading">
+        <h1 className='text-centered'>Join Millions Of Students using Writo</h1>
+        {/* <p> Faculty at writo</p> */}
+      </div>
+   <Reviews2/>
+   {/* <Reviews3/> */}
+  
+   <h2 className="highlights my-5 text-center" >...... Student Journey ......</h2>
+   <Journey/>
+   <Contactus/>
+   </>
+   </Router>
   );
 }
+
+
+
 
 export default App;
