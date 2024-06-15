@@ -15,6 +15,8 @@ import Reviews2 from './Reviews2';
 import Reviews3 from './Reviews3';
 import HeroSection from './HeroSection';
 import Hero2 from './Hero2';
+import Hero3 from './Hero3';
+import ConnectCoaches from './ConnectCoaches';
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
         </div> */}
 
 
-<Hero2/>
+{/* <Hero2/> */}
+<Hero3/>
+<ConnectCoaches/>
 
    {/* <h2 className="highlights text-center my-4" >..... What We Offer .....</h2> */}
    {/* <Courses/>
@@ -53,7 +57,7 @@ function App() {
    <Reviews2/>
    {/* <Reviews3/> */}
   
-   <h2 className="highlights my-5 text-center" >...... Student Journey ......</h2>
+   <h2 className="highlights my-5 text-center " >...... Student Journey ......</h2>
    <Journey/>
    <Contactus/>
    </>
