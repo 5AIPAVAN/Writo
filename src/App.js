@@ -17,11 +17,16 @@ import HeroSection from './HeroSection';
 import Hero2 from './Hero2';
 import Hero3 from './Hero3';
 import ConnectCoaches from './ConnectCoaches';
+import About_Hero from './About_Hero';
+import CommunityAim from './CommunityAim';
+import Whyjoin from './Whyjoin';
+import Whocanjoin from './Whocanjoin';
+import Howtojoin from './Howtojoin';
 
 function App() {
   return (
     <Router>
-   <>
+   <div style={{maxWidth:'1600px'}}>
    <NavScrollExample/>
 
    {/* <div className="font-[Poppins] h-screen overflow-h bg1">
@@ -29,9 +34,14 @@ function App() {
         </div> */}
 
 
-{/* <Hero2/> */}
-<Hero3/>
-<ConnectCoaches/>
+ {/* <Hero2/> */}
+{/* <Hero3/>  */}
+<About_Hero/>
+<CommunityAim/>
+<Whyjoin/>
+<Whocanjoin/>
+<Howtojoin/>
+{/* <ConnectCoaches/> */}
 
    {/* <h2 className="highlights text-center my-4" >..... What We Offer .....</h2> */}
    {/* <Courses/>
@@ -48,19 +58,19 @@ function App() {
    <h2 className="coursetitle my-5 text-center" > Foundational Courses</h2> */}
    {/* <Imagess/> */}
    {/* <ImagePart/> */}
-   <Mentors/>
+ 
    {/* <Reviews text="This is a simple marquee component in React!" speed={10} /> */}
    <div className="mentorshead gradientheading">
-        <h1 className='text-centered'>Join Millions Of Students using Writo</h1>
+        {/* <h1 className='text-centered'>Join Millions Of Students using Writo</h1> */}
         {/* <p> Faculty at writo</p> */}
       </div>
-   <Reviews2/>
+   {/* <Reviews2/> */}
    {/* <Reviews3/> */}
   
-   <h2 className="highlights my-5 text-center " >...... Student Journey ......</h2>
-   <Journey/>
+   {/* <h2 className="highlights my-5 text-center " >...... Student Journey ......</h2>
+   <Journey/> */}
    <Contactus/>
-   </>
+   </div>
    </Router>
   );
 }
